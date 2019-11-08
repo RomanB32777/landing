@@ -1,0 +1,83 @@
+.header{
+ background-color: #E5E5E5;
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+}
+
+.overlay{
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ /* background: rgba(244, 244, 244, 0.79); */
+ background: #FFFFFF;
+
+}
+
+.description{
+    /* position: absolute; */
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.description h1 button{
+  background: #FFC000;
+border: 1px solid #FFD600;
+box-sizing: border-box;
+border-radius: 3px;
+}
+
+.description h1{
+ color: black;
+
+position: absolute;
+width: 576px;
+height: 204px;
+left: 219px;
+/* top: 235px; */
+
+font-family: Graphik LC Web;
+/* font-family: Roboto; */
+font-size: 96px;
+line-height: 96px;
+text-align: center;
+}
+.description p{
+ color:#666;
+ font-size: 20px;
+ width: 50%;
+ line-height: 1.5;
+}
+.description button{
+ border:1px  solid #F97300;
+ background:#F97300;
+ color:#fff;
+}
+
+
+/*Portfolio*/
+.portfolio{
+ margin: 4em 0;
+    position: relative;
+}
+.portfolio h1{
+ color:#F97300;
+ margin: 2em;
+}
+.portfolio press-body_text{
+  /* height: 15rem; */
+  width: 100%;
+  margin: 1em;
+}
+.portfolio img{
+  height: 15rem;
+  width: 100%;
+  margin: 1em;
+}
+
+.press-card{
+background: #F3F3F3;
+border-radius: 5px;
+}
