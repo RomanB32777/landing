@@ -14,18 +14,6 @@ const MongoStore = require('connect-mongo')(session);
 const routes = require('./routes');
 const _ = require('lodash');
 
-
-// const couples = [['134134', '32'], ['56', '6792']]; // [['id', 'id'], ['id', 'id']]
-// const couples1 = ['134134', '6', '98', '89'];
-// const index0 = _.findIndex(couples, arr => _.indexOf(arr, '6792') );
-//
-// const index = _.indexOf(couples, '134134'); // index найденного элемента, -1 - если не найденного
-//  const index1 = _.findIndex(couples1, function (el) {
-//
-//         return el === '89';
-//  });
-// console.log(index0);
-//console.log(MongoStore);
 const app = express();
 
 let urlencodedParser= bodyParser.urlencoded({ extended: false});

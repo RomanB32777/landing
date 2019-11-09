@@ -8,6 +8,9 @@
 .brorder {
   border: 1px solid white; }
 
+.navbar-nav .active {
+  border-top: 2px solid #FFC000; }
+
 .main-btn, .request-btn {
   color: black;
   background: #FFC000;
@@ -61,13 +64,22 @@ h2.section-title, h2.block-title {
 
 .main_menu ul li {
   font-family: Graphik, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 400;
-  margin-right: 30px;
   font-weight: 600; }
+  .main_menu ul li:last-child::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    top: 23%;
+    right: 2%;
+    position: absolute;
+    background: url("../../img/Arrow_2_25.png") no-repeat center center/contain; }
+  .main_menu ul li:not(:last-child) {
+    margin-right: 30px; }
 
 nav .up_menu li {
   font-family: Graphik, sans-serif;
@@ -147,7 +159,7 @@ nav .icons_header .like_icon {
 
 .main_section {
   position: relative; }
-  .main_section .human1, .main_section .human2, .main_section .human3, .main_section .human4, .main_section .human5, .main_section .human6, .main_section .human7, .main_section .human8, .main_section .human9, .main_section .human10 {
+  .main_section .human1, .main_section .human2, .main_section .human3, .main_section .human4, .main_section .human5, .main_section .human6, .main_section .human7, .main_section .human8, .main_section .human9, .main_section .human10, .main_section .human11 {
     position: absolute;
     z-index: 1; }
   .main_section .human1 {
@@ -186,6 +198,40 @@ nav .icons_header .like_icon {
     height: 47px;
     bottom: 25%;
     right: 23%; }
+  .main_section .human7 {
+    background: url("../../img/human7.png") no-repeat center center/contain;
+    width: 50px;
+    height: 47px;
+    top: 6%;
+    left: 15%;
+    -webkit-transform: rotate(110.26deg);
+    transform: rotate(110.26deg); }
+  .main_section .human8 {
+    background: url("../../img/human8.png") no-repeat center center/contain;
+    width: 50px;
+    height: 47px;
+    bottom: 72%;
+    right: 7%;
+    -webkit-transform: rotate(-55.13deg);
+    transform: rotate(-55.13deg); }
+  .main_section .human9 {
+    background: url("../../img/human9.png") no-repeat center center/contain;
+    width: 50px;
+    height: 47px;
+    bottom: 22%;
+    right: 11%; }
+  .main_section .human10 {
+    background: url("../../img/human10.png") no-repeat center center/contain;
+    width: 50px;
+    height: 47px;
+    top: 35%;
+    left: 8%; }
+  .main_section .human11 {
+    background: url("../../img/human11.png") no-repeat center center/contain;
+    width: 50px;
+    height: 47px;
+    bottom: -25%;
+    left: 15%; }
 
 .AdditionalActive {
   margin-right: 20px; }
@@ -204,7 +250,15 @@ nav .icons_header .like_icon {
 
 .oneSection {
   position: relative;
-  margin-top: 200px; }
+  margin-top: 200px;
+  margin-bottom: 200px; }
+  .oneSection .main-info {
+    font-family: Graphik, sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 600; }
+    .oneSection .main-info p {
+      padding: 0rem 3rem 0 8rem; }
   .oneSection .imgEllipse {
     background: url("../../img/Ellipse 2.png") no-repeat center center/contain;
     width: 90%;
@@ -274,7 +328,7 @@ nav .icons_header .like_icon {
       margin-bottom: 80px; }
     .fourSection .advantages .about-advantage__img {
       position: relative; }
-      .fourSection .advantages .about-advantage__img .humans {
+      .fourSection .advantages .about-advantage__img .humans, .fourSection .advantages .about-advantage__img .about-human1, .fourSection .advantages .about-advantage__img .about-human2, .fourSection .advantages .about-advantage__img .about-human3 {
         position: absolute;
         z-index: 1; }
       .fourSection .advantages .about-advantage__img .humans {
@@ -283,6 +337,24 @@ nav .icons_header .like_icon {
         height: 64px;
         bottom: 0;
         right: 5%; }
+      .fourSection .advantages .about-advantage__img .about-human1 {
+        background: url("../../img/about-human1.png") no-repeat center center/contain;
+        width: 44px;
+        height: 48px;
+        top: 28%;
+        right: 22%; }
+      .fourSection .advantages .about-advantage__img .about-human2 {
+        background: url("../../img/about-human2.png") no-repeat center center/contain;
+        width: 44px;
+        height: 48px;
+        top: 15%;
+        right: 50%; }
+      .fourSection .advantages .about-advantage__img .about-human3 {
+        background: url("../../img/about-human3.png") no-repeat center center/contain;
+        width: 44px;
+        height: 48px;
+        bottom: 25%;
+        right: 50%; }
     .fourSection .advantages .about-advantage__human {
       background: url("../../img/adv-human.png") no-repeat center center/contain;
       width: 45px;
