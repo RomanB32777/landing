@@ -92,10 +92,13 @@ nav .up_menu li {
     width: 16px;
     height: 16px; }
 
-nav .sing_up img {
+nav .icons_header .like_icon {
+  margin-right: 20px; }
+
+.sing_up-block img {
   margin-right: 4px; }
 
-nav .sing_up a {
+.sing_up-block a {
   font-family: Graphik, sans-serif;
   font-size: 12px;
   line-height: 12px;
@@ -103,9 +106,6 @@ nav .sing_up a {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-weight: 600; }
-
-nav .icons_header .like_icon {
-  margin-right: 20px; }
 
 .portfolio {
   margin: 4em 0;
