@@ -9,6 +9,10 @@ $secondary-color: #F3F3F3
 $link-color: #2D9CDB
 $border-color: #FFD600
 
+
+.carousel-indicators
+  z-index: 1
+
 // .carousel-control-next-icon
 //   background-image: url('../../img/button_next.png')
 //   // width: 124px
@@ -23,26 +27,18 @@ $border-color: #FFD600
 //   width: 100%
 //   height: 40%
 
+body
+  max-width: 1000px
+  margin: 0 auto
 
 .bborder
   border: 1px solid black
-.brorder
-  border: 1px solid white
-  // text-transform: uppercase
+
 
 
 .navbar-nav
   .active
     border-top: 2px solid $primary-color
-      // bottom: 65%
-      // content: ''
-      // width: 15%
-      // position: absolute
-      // top: 0
-      // height: 10%
-      // border-top: 2px solid $primary-color
-
-
 
 .main-btn, .request-btn
   color: black
@@ -106,6 +102,19 @@ h2.section-title, h2.block-title
     font-weight: 600
     // margin-bottom: 30px
 
+
+.wraper
+  img 
+    width: 144px
+    height: 152px
+.up_navbar
+  margin-left: 20px
+  &-arrow
+    margin-left: 150px
+
+.main_navbar
+   margin-left: 3.5%
+   margin-top: 1.5%
 .main_menu ul li
   font-family: $font-stack
   font-size: 15px
@@ -146,11 +155,10 @@ nav
       height: 16px
 
 
+.icons_header
 
-  .icons_header
-
-    .like_icon
-      margin-right: 20px
+  .like_icon
+    margin-right: 20px
 
 
 .sing_up
@@ -308,6 +316,9 @@ nav
     height: 47px
     bottom: -25%
     left: 15%
+
+.Additionals
+  margin-left: 8%
 
 .AdditionalActive
   margin-right: 20px
@@ -545,6 +556,7 @@ nav
           padding: 45px 0 20px 0
 
         &-message
+          position: relative
           &__tail
             background:  url('../../img/message.png') no-repeat center center / contain
             transform: rotate(-1.31deg)
@@ -577,6 +589,7 @@ nav
 
 
         &-info
+          position: relative
           &__photo
             width: 308px
             height: 308px

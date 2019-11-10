@@ -2,11 +2,15 @@
   src: "../fonts/Graphik_LC_Web_Black.ttf";
   font-family: "Graphik"; }
 
+.carousel-indicators {
+  z-index: 1; }
+
+body {
+  max-width: 1000px;
+  margin: 0 auto; }
+
 .bborder {
   border: 1px solid black; }
-
-.brorder {
-  border: 1px solid white; }
 
 .navbar-nav .active {
   border-top: 2px solid #FFC000; }
@@ -62,6 +66,19 @@ h2.section-title, h2.block-title {
   color: #000000;
   font-weight: 600; }
 
+.wraper img {
+  width: 144px;
+  height: 152px; }
+
+.up_navbar {
+  margin-left: 20px; }
+  .up_navbar-arrow {
+    margin-left: 150px; }
+
+.main_navbar {
+  margin-left: 3.5%;
+  margin-top: 1.5%; }
+
 .main_menu ul li {
   font-family: Graphik, sans-serif;
   font-size: 15px;
@@ -92,7 +109,7 @@ nav .up_menu li {
     width: 16px;
     height: 16px; }
 
-nav .icons_header .like_icon {
+.icons_header .like_icon {
   margin-right: 20px; }
 
 .sing_up-block img {
@@ -232,6 +249,9 @@ nav .icons_header .like_icon {
     height: 47px;
     bottom: -25%;
     left: 15%; }
+
+.Additionals {
+  margin-left: 8%; }
 
 .AdditionalActive {
   margin-right: 20px; }
@@ -424,68 +444,72 @@ nav .icons_header .like_icon {
     padding-bottom: 45px; }
     .sixSection .carousel-inner .carousel-item .review-title {
       padding: 45px 0 20px 0; }
-    .sixSection .carousel-inner .carousel-item .review-message__tail {
-      background: url("../../img/message.png") no-repeat center center/contain;
-      -webkit-transform: rotate(-1.31deg);
-      transform: rotate(-1.31deg);
-      position: absolute;
-      right: -10%;
-      top: 55%;
-      z-index: 12 !important;
-      width: 65.5px;
-      height: 47.46px; }
-    .sixSection .carousel-inner .carousel-item .review-message__text {
-      top: 8%;
-      right: -2%;
-      position: absolute;
-      max-width: 500px;
-      background: white;
-      -webkit-transform: rotate(1.31deg);
-      transform: rotate(1.31deg);
-      padding: 34px 18px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      border-radius: 20px; }
-      .sixSection .carousel-inner .carousel-item .review-message__text p {
+    .sixSection .carousel-inner .carousel-item .review-message {
+      position: relative; }
+      .sixSection .carousel-inner .carousel-item .review-message__tail {
+        background: url("../../img/message.png") no-repeat center center/contain;
+        -webkit-transform: rotate(-1.31deg);
+        transform: rotate(-1.31deg);
+        position: absolute;
+        right: -10%;
+        top: 55%;
+        z-index: 12 !important;
+        width: 65.5px;
+        height: 47.46px; }
+      .sixSection .carousel-inner .carousel-item .review-message__text {
+        top: 8%;
+        right: -2%;
+        position: absolute;
+        max-width: 500px;
+        background: white;
+        -webkit-transform: rotate(1.31deg);
+        transform: rotate(1.31deg);
+        padding: 34px 18px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 20px; }
+        .sixSection .carousel-inner .carousel-item .review-message__text p {
+          font-family: Graphik, sans-serif;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 31px;
+          color: #000000; }
+    .sixSection .carousel-inner .carousel-item .review-info {
+      position: relative; }
+      .sixSection .carousel-inner .carousel-item .review-info__photo {
+        width: 308px;
+        height: 308px; }
+      .sixSection .carousel-inner .carousel-item .review-info__name {
         font-family: Graphik, sans-serif;
-        font-weight: 600;
         font-size: 24px;
         line-height: 31px;
-        color: #000000; }
-    .sixSection .carousel-inner .carousel-item .review-info__photo {
-      width: 308px;
-      height: 308px; }
-    .sixSection .carousel-inner .carousel-item .review-info__name {
-      font-family: Graphik, sans-serif;
-      font-size: 24px;
-      line-height: 31px;
-      font-weight: 600;
-      margin-top: 14px;
-      margin-bottom: 6px; }
-    .sixSection .carousel-inner .carousel-item .review-info__position {
-      font-family: Graphik, sans-serif;
-      font-size: 12px;
-      line-height: 19px;
-      text-align: center;
-      letter-spacing: 0.1em;
-      text-transform: uppercase; }
-    .sixSection .carousel-inner .carousel-item .review-info__button button {
-      background: linear-gradient(184.22deg, #37AEE2 21.67%, #1E96C8 70%);
-      border-radius: 3px;
-      padding: 20px 10px 20px 0;
-      color: #FFFFFF;
-      font-family: Graphik, sans-serif;
-      font-size: 16px;
-      line-height: 16px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      width: 100%;
-      position: relative;
-      z-index: 20; }
-      .sixSection .carousel-inner .carousel-item .review-info__button button img {
-        margin-right: 10px;
-        width: 22px;
-        height: 18px; }
+        font-weight: 600;
+        margin-top: 14px;
+        margin-bottom: 6px; }
+      .sixSection .carousel-inner .carousel-item .review-info__position {
+        font-family: Graphik, sans-serif;
+        font-size: 12px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase; }
+      .sixSection .carousel-inner .carousel-item .review-info__button button {
+        background: linear-gradient(184.22deg, #37AEE2 21.67%, #1E96C8 70%);
+        border-radius: 3px;
+        padding: 20px 10px 20px 0;
+        color: #FFFFFF;
+        font-family: Graphik, sans-serif;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        width: 100%;
+        position: relative;
+        z-index: 20; }
+        .sixSection .carousel-inner .carousel-item .review-info__button button img {
+          margin-right: 10px;
+          width: 22px;
+          height: 18px; }
 
 .fiveSection {
   margin-bottom: 190px; }
