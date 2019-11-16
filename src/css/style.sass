@@ -37,7 +37,8 @@ body
 
 
 .navbar-nav
-  .active
+  .nav-item
+  .nav-item__active
     border-top: 2px solid $primary-color
 
 .main-btn, .request-btn
@@ -107,15 +108,15 @@ h2.section-title, h2.block-title
   img 
     width: 144px
     height: 152px
-.up_navbar
+.up-navbar
   margin-left: 20px
   &-arrow
     margin-left: 150px
 
-.main_navbar
+.main-navbar
    margin-left: 3.5%
    margin-top: 1.5%
-.main_menu ul li
+.main-menu ul li
   font-family: $font-stack
   font-size: 15px
   line-height: 16px
@@ -141,7 +142,7 @@ nav
   // position: relative
   // z-index: 99
 
-  .up_menu li
+  .up-menu li
     font-family: $font-stack
     font-size: 12px
     line-height: 12px
@@ -155,14 +156,14 @@ nav
       height: 16px
 
 
-.icons_header
+.navbar-icons
 
-  .like_icon
+  &__like
     margin-right: 20px
 
 
-.sing_up
-  &-block
+.sing-up
+  &__block
     img
       margin-right: 6px
     a
@@ -236,7 +237,7 @@ nav
     z-index: 2
     position: relative
 
-.main_section
+.main-section
   position: relative
 
   .human1, .human2, .human3, .human4, .human5, .human6, .human7, .human8, .human9, .human10, .human11
@@ -317,10 +318,10 @@ nav
     bottom: -25%
     left: 15%
 
-.Additionals
+.links
   margin-left: 8%
 
-.AdditionalActive
+.link
   margin-right: 20px
   a
     padding: 7px 15px
@@ -338,7 +339,7 @@ nav
 
 
 
-.oneSection
+.one-section
   position: relative
   margin-top: 200px
   margin-bottom: 200px
@@ -352,7 +353,7 @@ nav
       padding: 0rem 3rem 0 8rem
 
 
-  .imgEllipse
+  .img-ellipse
     background: url('../../img/Ellipse_2.svg') no-repeat center center / contain
     width: 90%
     height: 90%
@@ -360,7 +361,7 @@ nav
     top: 0
     right: 0
 
-    .VectorText
+    &__text
       background: url('../../img/VectorText.svg') no-repeat center center / contain
       width: 100%
       height: 100%
@@ -368,7 +369,7 @@ nav
       top: 0
       right: 0
 
-    .EllipseYel
+    &__logo
       background: url('../../img/logosvg.svg') no-repeat center center / contain
       width: 100%
       height: 100%
@@ -376,7 +377,7 @@ nav
       top: 15%
       left: 7%
 
-.twoSection
+.two-section
   margin-bottom: 90px
   p.head
     font-family: $font-stack
@@ -384,19 +385,19 @@ nav
     line-height: 96px
     font-weight: 600
 
-  p.after_head
+  p.after-head
     font-family: $font-stack
     width: 100%
     // border: 1px solid black
     font-size: 48px
     line-height: 48px
 
-  .iphone_course, .book_course
+  .iphone-course, .book-course
     position: relative
 
 
-    .iphone_image
-      background: url('../../img/Phone.svg') no-repeat center center / contain
+    .iphone-image
+      background: url('../../img/Phone.png') no-repeat center center / contain
       width: 292px
       height: 414px
       position: absolute
@@ -404,8 +405,8 @@ nav
       left: 40%
       z-index: 1
 
-    .book_image
-      background: url('../../img/book_image.svg') no-repeat center center / contain
+    .book-image
+      background: url('../../img/Gravity-Hard-Cover-Book-Mockup 2.png') no-repeat center center / contain
       // width: 355px
       // height: 415px
       width: 100%
@@ -415,17 +416,17 @@ nav
       left: 25%
       z-index: -1
 
-    .back_book_image
-      background: url('../../img/back_book_image.svg') no-repeat center center / contain
-      width: 100%
-      height: 30%
-      position: absolute
-      top: 10%
-      right: 15%
-      z-index: 1
+      &__back
+        background: url('../../img/Gravity-Hard-Cover-Book-Mockup 2.1.png') no-repeat center center / contain
+        width: 100%
+        height: 30%
+        position: absolute
+        top: 10%
+        right: 15%
+        z-index: 1
 
 
-.fourSection
+.four-section
   margin-top: 140px
 
   .advantages
@@ -544,7 +545,7 @@ nav
 
 // color: #000000;
 
-.sixSection
+.six-section
 
   .carousel-inner
     .carousel-item
@@ -568,6 +569,7 @@ nav
             height: 47.46px
             // border: 1px solid red
           &__text
+            margin-top: 6px
             top: 8%
             right: -2%
             position: absolute
@@ -628,7 +630,7 @@ nav
                 height: 18px
 
 
-.fiveSection
+.five-section
   margin-bottom: 190px
   .team-twoRow
     margin-top: 10%
@@ -637,29 +639,27 @@ nav
     margin-bottom: 50px
 
   .team-cards
+    
+    &__endlink
+      color: $link-color
+
+      a
+        &::before
+          content: ''
+          position: absolute
+          width: 5%
+          height: 1%
+          left: 14%
+          bottom: 2%
+          background: url('../../img/Line.png') no-repeat center center / contain
 
     &__block
-
-      &-endlink
-        color: $link-color
-        a
-           &::before
-            content: ''
-            position: absolute
-            width: 5%
-            height: 1%
-            left: 14%
-            bottom: 2%
-            background: url('../../img/Line.png') no-repeat center center / contain
-
 
       .team-card
         width: 420px
         height: 333px
 
         &-photo
-
-
 
 
 .about
@@ -706,7 +706,7 @@ nav
   border-radius: 5px
 
 
-.sevenSection
+.seven-section
   margin: 180px 0
 
   .container-flow:not(:last-child)
@@ -745,7 +745,7 @@ nav
         line-height: 31px
         font-weight: 500
 
-    &-Subcaption
+    &-subcaption
       width: 60%
       margin-top: 20px
 
@@ -777,7 +777,7 @@ nav
         // list-style-image: url('../../img/Line.png')
 
 
-.eightSection
+.eight-section
 
   margin-bottom: 86px
 
@@ -797,18 +797,21 @@ nav
       line-height: 31px
 
 
-.ninetSection
+.ninet-section
 
   margin-bottom: 130px
 
   .section-title
     margin-bottom: 33px
 
-  .pressCards
+  .press-cards
 
-    .pressCard-info
-      height: 263px
+    .press-card
+      background: none
 
+      &__info
+        height: 263px
+      
       &__title
         p
           font-family: $font-stack
@@ -819,7 +822,6 @@ nav
 
       &__link
         margin: 0px 15px 15px
-
         a
           font-family: PT Sans
           font-style: normal
@@ -867,14 +869,14 @@ nav
 
   &-fcol
     padding-top: 4%
-    &__stext
+    &__text
       padding-top: 3%
     &__adress
       padding-top: 1%
   &-col
     // padding-top: 4%
     // border: 1px solid white
-    &__soclogo
+    &__slogo
       margin-right: 7px
 
     &__ul
